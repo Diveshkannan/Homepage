@@ -100,25 +100,23 @@
 
 
 
-               let vs;
-               let git;
-               let linkedin;
-               if(data)
-               {
-                   vs=array[6];
-                   git=array[7];
-                   linkedin=array[8];
+                let vs;
+                let git;
+                let linkedin;
+                if (data) {
+                    vs = array[6];
+                    git = array[7];
+                    linkedin = array[8];
 
 
-               }
-               else
-               {
-                confirm=false;
-                alert("Login first");
-               }
+                }
+                else {
+                    confirm = false;
+                    alert("Login first");
+                }
 
 
-               let personal_button = document.querySelectorAll("#link");
+                let personal_button = document.querySelectorAll("#link");
 
 
                 if (confirm) {
@@ -323,34 +321,31 @@
 
                 });
 
-               personal_button.forEach((button) => {
-                   button.addEventListener("click",(event) => {
-                     if(event.target.name === "vs")
-                     {
-                          var link = document.createElement('a');
-                        link.href = vs;
-                        link.target = "_blank";
-                        link.click();
+                personal_button.forEach((button) => {
+                    button.addEventListener("click", (event) => {
+                        if (event.target.name === "vs") {
+                            var link = document.createElement('a');
+                            link.href = vs;
+                            link.target = "_blank";
+                            link.click();
 
-                     }
+                        }
 
-                     else if(event.target.name === "git")
-                     {
-                          var link = document.createElement('a');
-                        link.href = git;
-                        link.target = "_blank";
-                        link.click();
-                     }
+                        else if (event.target.name === "git") {
+                            var link = document.createElement('a');
+                            link.href = git;
+                            link.target = "_blank";
+                            link.click();
+                        }
 
-                      else if(event.target.name === "in")
-                     {
-                          var link = document.createElement('a');
-                        link.href = linkedin;
-                        link.target = "_blank";
-                        link.click();
-                     }
-                   });
-               });
+                        else if (event.target.name === "in") {
+                            var link = document.createElement('a');
+                            link.href = linkedin;
+                            link.target = "_blank";
+                            link.click();
+                        }
+                    });
+                });
 
 
 
@@ -373,7 +368,7 @@
                 <h3 class="quote">"🏆If you burn out exhausted, remember why you started this!!🏆"</h3>
                 <div class="navigation">
                     <button type="button" class="change">About-us</button>
-                    <button type="button" class="change">Detail</button>
+
                     <button type="button" class="change">Choose-path</button>
                     <button type="button" class="change">Login</button>
                     <button type="button" class="change">Profile</button>
@@ -427,14 +422,14 @@
                 </div>
 
 
-         <hr>
+                <hr>
 
 
                 <div class="cover">
 
-                    <div >
+                    <div>
 
-                          <h3 class="purpose">Build this </h3>
+                        <h3 class="purpose">Build this </h3>
                         <div class="link_box">
                             <p class="link_Text" id="vs">VS Code</p>
 
@@ -446,9 +441,9 @@
                     </div>
 
 
-                      <div >
+                    <div>
 
-                          <h3 class="purpose">Document it </h3>
+                        <h3 class="purpose">Document it </h3>
                         <div class="link_box">
                             <p class="link_Text" id="git">Github</p>
 
@@ -458,10 +453,10 @@
                         </div>
 
                     </div>
-                   
-                      <div >
 
-                          <h3 class="purpose">Publicity </h3>
+                    <div>
+
+                        <h3 class="purpose">Publicity </h3>
                         <div class="link_box">
                             <p class="link_Text" id="in">Linkedin</p>
 
